@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { GITHUB_URL } from '../data'
+import { GITHUB_URL, README_URL } from '../data'
 import { GitHubIcon } from './icons'
 
 export function Cta() {
@@ -18,7 +18,7 @@ export function Cta() {
             <GitHubIcon size={17} />
             Star on GitHub
           </a>
-          <a className="btn-ghost" href="#opensource" style={{ fontSize: 15, padding: '14px 24px' }}>Read the docs →</a>
+          <a className="btn-ghost" href={README_URL} target="_blank" rel="noopener" style={{ fontSize: 15, padding: '14px 24px' }}>Read the docs →</a>
         </div>
       </div>
     </section>

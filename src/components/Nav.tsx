@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { GITHUB_URL } from '../data'
+import { GITHUB_URL, README_URL } from '../data'
 import { GitHubIcon } from './icons'
 
 export function Nav() {
@@ -18,7 +18,7 @@ export function Nav() {
           <a className="nav-link" href="#roadmap">Roadmap</a>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <a className="nav-link nav-docs" href="#opensource">Docs</a>
+          <a className="nav-link nav-docs" href={README_URL} target="_blank" rel="noopener">Docs</a>
           <a className="btn-primary" href={GITHUB_URL} style={{ fontSize: 14, padding: '9px 15px', borderRadius: 9 }}>
             <GitHubIcon size={16} />
             Star on GitHub

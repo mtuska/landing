@@ -85,7 +85,7 @@ function LiveFeed() {
 
 export function EventFeed() {
   return (
-    <section style={{ borderTop: '1px solid rgba(255,255,255,.06)', background: 'radial-gradient(900px 480px at 18% 0%,#101319 0%,var(--bg) 60%)' }}>
+    <section id="events" style={{ borderTop: '1px solid rgba(255,255,255,.06)', background: 'radial-gradient(900px 480px at 18% 0%,#101319 0%,var(--bg) 60%)' }}>
       <div className="wrap split split-feed" style={{ paddingTop: 96, paddingBottom: 96 }}>
         <div>
           <div className="kicker">Append-only event log</div>

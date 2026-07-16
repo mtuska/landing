@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import { GITHUB_URL } from '../data'
+import { GITHUB_URL, QUICKSTART_URL } from '../data'
 import { GitHubIcon } from './icons'
 
 export function Hero() {
@@ -25,7 +25,7 @@ export function Hero() {
           <GitHubIcon size={17} />
           View on GitHub
         </a>
-        <a className="btn-ghost" href="#opensource" style={{ fontSize: 15, padding: '13px 22px' }}>Read the quickstart →</a>
+        <a className="btn-ghost" href={QUICKSTART_URL} target="_blank" rel="noopener" style={{ fontSize: 15, padding: '13px 22px' }}>Read the quickstart →</a>
       </div>
       <div className="mono" style={{ marginTop: 22, fontSize: 12.5, color: 'var(--dim)', animation: 'nq-rise .6s ease .2s both' }}>
         MCP server · Cloudflare Workers + Durable Objects + D1 · self-host in minutes

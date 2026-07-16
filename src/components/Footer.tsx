@@ -19,7 +19,7 @@ export function Footer() {
             <div className="mono" style={{ fontSize: 10.5, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--dim)', marginBottom: 14 }}>{c.head}</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {c.links.map((l) => (
-                <a key={l} className="footer-link" href="#top">{l}</a>
+                <a key={l.label} className="footer-link" href={l.href} {...(l.href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}>{l.label}</a>
               ))}
             </div>
           </div>

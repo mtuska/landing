@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Noriq</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 300 700;
+      font-display: swap;
+      src: url('/fonts/space-grotesk-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'IBM Plex Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/ibm-plex-mono-400-latin.woff2') format('woff2');
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: #0a0b0d; color: #e6e8ec;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased; text-align: center;
+    }
+    main { padding: 28px; }
+    img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 0 18px rgba(94,120,255,.5)); }
+    .code { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #c6f24e; margin-top: 22px; }
+    h1 { font-size: 40px; letter-spacing: -.03em; margin: 10px 0 0; }
+    p { color: #8a8f98; font-size: 16px; line-height: 1.6; max-width: 420px; margin: 14px auto 0; }
+    a {
+      display: inline-block; margin-top: 26px; background: #c6f24e; color: #0a0b0d;
+      font-weight: 600; font-size: 15px; padding: 12px 22px; border-radius: 11px; text-decoration: none;
+    }
+    a:hover { filter: brightness(1.08); }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/icons/icon-192.png" alt="Noriq" />
+    <div class="code">404 · task not found</div>
+    <h1>This page never got claimed.</h1>
+    <p>No task exists at this path — it may have been requeued, or it never existed at all.</p>
+    <a href="/">Back to noriq.dev</a>
+  </main>
+</body>
+</html>

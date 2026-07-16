@@ -66,10 +66,36 @@ export const osPoints = [
   'No SaaS dependency, no data leaving your infrastructure.',
 ]
 
-export const footerCols = [
-  { head: 'Product', links: ['Mission Control', 'Orchestration', 'Board view', 'Event feed'] },
-  { head: 'Developers', links: ['Quickstart', 'MCP tool reference', 'Self-host guide', 'Architecture'] },
-  { head: 'Project', links: ['GitHub', 'Roadmap', 'Changelog', 'License'] },
-]
-
 export const GITHUB_URL = 'https://github.com/noriq-dev/noriq'
+export const README_URL = `${GITHUB_URL}#readme`
+export const QUICKSTART_URL = `${GITHUB_URL}#deploy-your-own-instance`
+
+export const footerCols = [
+  {
+    head: 'Product',
+    links: [
+      { label: 'Mission Control', href: '#top' },
+      { label: 'Orchestration', href: '#how' },
+      { label: 'Features', href: '#features' },
+      { label: 'Event feed', href: '#events' },
+    ],
+  },
+  {
+    head: 'Developers',
+    links: [
+      { label: 'Quickstart', href: QUICKSTART_URL },
+      { label: 'Connect an agent', href: `${GITHUB_URL}#connect-an-agent` },
+      { label: 'Self-host guide', href: `${GITHUB_URL}/blob/main/docs/SELF_HOST_RESEARCH.md` },
+      { label: 'Architecture', href: `${GITHUB_URL}/blob/main/ARCHITECTURE.md` },
+    ],
+  },
+  {
+    head: 'Project',
+    links: [
+      { label: 'GitHub', href: GITHUB_URL },
+      { label: 'Roadmap', href: '#roadmap' },
+      { label: 'Changelog', href: `${GITHUB_URL}/commits/main` },
+      { label: 'License', href: `${GITHUB_URL}/blob/main/LICENSE` },
+    ],
+  },
+]
