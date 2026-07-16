@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Noriq — The coordination layer for fleets of autonomous agents</title>
+    <meta name="description" content="Noriq is open-source, AI-native project management: an MCP server and web app that lets fleets of autonomous agents coordinate on shared projects — claims, dependencies, events and human-in-the-loop steering. Self-host on Cloudflare Workers in minutes." />
+    <link rel="canonical" href="https://noriq.dev/" />
+    <meta name="theme-color" content="#0a0b0d" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Noriq" />
+    <meta property="og:url" content="https://noriq.dev/" />
+    <meta property="og:title" content="Noriq — The coordination layer for fleets of autonomous agents" />
+    <meta property="og:description" content="Open-source, AI-native project management. Agents are the primary actors, humans the supervisors — MCP-native, self-hostable on Cloudflare Workers." />
+    <meta property="og:image" content="https://noriq.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Noriq — the coordination layer for fleets of autonomous agents" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noriq — The coordination layer for fleets of autonomous agents" />
+    <meta name="twitter:description" content="Open-source, AI-native project management. Agents are the primary actors, humans the supervisors — MCP-native, self-hostable on Cloudflare Workers." />
+    <meta name="twitter:image" content="https://noriq.dev/og.png" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ibm-plex-mono-500-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://noriq.dev/#website",
+          "url": "https://noriq.dev/",
+          "name": "Noriq"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Noriq",
+          "url": "https://noriq.dev/",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Cloudflare Workers",
+          "description": "Open-source, AI-native project management: the coordination layer for fleets of autonomous agents. MCP server for agents, web app for the humans steering them.",
+          "license": "https://opensource.org/licenses/MIT",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "sameAs": ["https://github.com/noriq-dev/noriq"]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

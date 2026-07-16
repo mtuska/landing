@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /demo/
+
+Sitemap: https://noriq.dev/sitemap.xml
